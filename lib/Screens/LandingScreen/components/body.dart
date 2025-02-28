@@ -6,9 +6,9 @@ import 'package:surfing_app/Widgets/story_list.dart';
 
 class Body extends StatelessWidget {
   const Body({
-    Key key,
-    @required this.size,
-  }) : super(key: key);
+    super.key,
+    required this.size,
+  });
 
   final Size size;
 
@@ -18,11 +18,11 @@ class Body extends StatelessWidget {
       children: [
         buildAppBar(size),
         StoriesList(size: size),
-        Container(
-          height: size.height * 0.75,
+        Expanded(
           child: ListView.builder(
             itemCount: post.length,
             itemBuilder: (context, index) => Posts(
+              key: ValueKey(post[index].bgimage),
               post: post[index],
               size: size,
             ),

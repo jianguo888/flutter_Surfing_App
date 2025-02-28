@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class StoriesList extends StatelessWidget {
   const StoriesList({
-    Key key,
-    @required this.size,
-  }) : super(key: key);
+    super.key,
+    required this.size,
+  });
 
   final Size size;
 
@@ -50,5 +50,4 @@ class StoriesList extends StatelessWidget {
         ),
       ),
     );
-  }
-}
+  }}

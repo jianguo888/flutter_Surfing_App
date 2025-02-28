@@ -1,14 +1,20 @@
 class Post {
-  final String bgimage, name, time, likes, text, place, profilePic;
+  final String bgimage;
+  final String name;
+  final String time;
+  final String likes;
+  final String text;
+  final String place;
+  final String profilePic;
 
   Post(
-      {this.profilePic,
-      this.bgimage,
-      this.name,
-      this.time,
-      this.likes,
-      this.text,
-      this.place});
+      {required this.profilePic,
+      required this.bgimage,
+      required this.name,
+      required this.time,
+      required this.likes,
+      required this.text,
+      required this.place});
 }
 
 List<Post> post = [
